@@ -52,6 +52,15 @@
             height: 360px;
         }
 
+		.jstree-default {
+			background: white;
+		}
+		
+		.jstree-default .jstree-anchor {
+  			color: black;
+  			text-shadow: none;
+		}
+		
         .drop-tree {
             text-align: left;
             background-color: transparent;
@@ -564,7 +573,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-4"><img src="data/head.png" alt="" width="100%"/></div>
-                    <div class="col-md-8" style="padding-left: 0;padding-right: 0;">
+                    <div class="col-md-8" style="padding-left: 0;padding-right:25px;">
                             <div id="progressLoad" class="progress col-md-12" style="padding-left:0px;padding-right:0px;">
                                 <div id="progressBarLoad" class="progress-bar progress-bar-striped active" role="progressbar"
                                      aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
@@ -572,8 +581,11 @@
                                 </div>
                             </div>
                         <div class="row">
-                            <div class="col-md-6"><input type="file" id="inputfiles" multiple
-                                                         onchange="oninputfiles()"/></div>
+                            <div class="col-md-6" style="margin-bottom:1em;">
+                            <input type="file" id="inputfiles" multiple onchange="oninputfiles()"/>
+                            </div>
+                            <div class="col-md-6">&nbsp;</div>
+            
                             <!-- 
 <div class="col-md-6"><input type="file" id="inputdirectory" webkitdirectory mozdirectory
                                                          msdirectory odirectory directory
